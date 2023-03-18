@@ -5,7 +5,7 @@ body{
     overflow: hidden;
 }
 .gameBoard{
-    background-color: #C8B6A6;
+    background-color: #2D2727;
     border-radius: 2%;
     height: 70%;
     width: 60%;
@@ -31,11 +31,14 @@ body{
     border-radius: 4%;
     z-index: 9;
 }
-p, option, label, select, input{
+p, option, label, select, input, h1{
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     color: #2D2727;
     font-size: 2rem;
+}
+h1{
+    font-size: 4rem;
 }
 select, option{
     margin-bottom: 20px;
@@ -59,15 +62,15 @@ input[type=radio]{
     width: 4rem;
 }
 .cell:hover{
-    background-color: #2D2727;
+    background-color: #0E8388;
     color: white;
     cursor: pointer;
 }
 .player{
-    color: #2D2727;
+    color: #0E8388;
 }
 .enemy{
-    color: #B46060;
+    color: #DF2E38;
 }
 .btn{
     font-family: 'Kanit', sans-serif;
