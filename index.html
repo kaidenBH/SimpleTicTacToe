@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mainMenu">
+            <form>
+                <p>Select your Player</p>
+                <input type="radio" id="X" name="player" value="X" checked>
+                <label>X</label><br>
+                <input type="radio" id="O" name="player" value="O">
+                <label>O</label><br>
+                <p>Select The machine difficulty</p>
+                <select id="difficulty" name="difficult"y>
+                    <option value="1" selected="selected">Trash</option>
+                    <option value="2">Gold Trash</option>
+                    <option value="3">Human</option>
+                    <option value="4">Chat-gpt-99</option>
+                </select> <br>
+                <button type="button" class="btn" onclick="StartGame()">Play</button>
+            </form>
+        </div>
+        <div class="game hidden">
+            <div class="gameBoard">
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">O</div>
+                <div class="cell enemy">X</div>
+                <div class="cell enemy">X</div>
+
+            </div>
+            <button type="button" class="btn retry" onclick="RetryGame()">Retry</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
